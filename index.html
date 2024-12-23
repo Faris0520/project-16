@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Maze Game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+</head>
+<body>
+  <div id="page">
+    <div id="msg-cont">
+      <div id="message">
+        <h1>Congratulations!</h1>
+        <p>Finally, "Sad emoji" meets his friends!</p>
+        <p id="moves"></p>
+        <input id="okBtn" type="button" onclick="toggleVisablity('msg-cont')" value="Done" />
+      </div>
+    </div>
+    <br>
+    <div id="menu">
+      <div class="custom-select">
+        <select id="difficult">
+                  <option value="10">Easy</option>
+                  <option value="15">Medium</option>
+                  <option value="25">Hard</option>                                     
+              </select>
+      </div>
+      <input id="start" type="button" onclick="makeMaze()" value="Start" />
+    </div>
+    <div id="view">
+      <div id="maze_cont">
+        <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+      </div>
+    </div>
+    <p id="instructions">Use WASD keys to move the sad emoji to his friends!</p>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #89dedf;
+    font-family: 'Poppins', sans-serif;
+}
+
+#view {
+    margin-top: 30px;
+}
+#maze_cont #mazeCanvas {
+    margin: 0;
+    display: block;
+    border: solid 2px black;
+    height: 500px;
+}
+input, select {
+    cursor: pointer;
+    background-color: rgb(39, 34, 34);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+}
+#maze_cont {
+    top: 15px;
+    opacity: 0;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+}
+.custom-select {
+	display: inline-block;
+}
+input:hover, select:hover {
+	background-color: rgba(0, 0, 0, 0.70);
+}
+input:active, select:active {
+	background-color: black;
+}
+input:focus, select:focus {
+	outline: none;
+}
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 125px center;
+}
+#msg-cont #message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+#page {
+	text-align: center;
+	height: auto;
+	width: auto;
+	margin: auto;
+}
+#msg-cont {
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(41 68 80 / 61%);
+    z-index: 1;
+}
+#page #menu {
+    margin: auto;
+    padding: 10px;
+    height: 65px;
+    box-sizing: border-box;
+}
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+#page #view {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+.border {
+    border: 10px black solid;
+    border-radius: 10px;
+}
+
+#instructions {
+    margin-top: 530px;
+}
+ 
+#start {
+    background-color: green; /* Mengatur warna latar belakang menjadi hijau */
+    color: white; /* Mengatur warna teks menjadi putih */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Menambahkan sudut melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+#start:hover {
+    background-color: darkgreen; /* Mengubah warna saat hover */
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+	input, select {
+	    width: 120px;
+	}
+}
